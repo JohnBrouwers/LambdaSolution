@@ -10,6 +10,8 @@ namespace LambdaConsole
         private delegate void Say(string what);
         private delegate string What();
 
+        private delegate int Optellen(int i, int j);
+
         static void Main(string[] args)
         {
             //Declare delegate object variable
@@ -44,6 +46,14 @@ namespace LambdaConsole
             what = () => "..ehh say!";
             Console.WriteLine(what());
 
+            //Opdracht 'Voer een eigen lambda expression uit':
+            // Definieer een 'bereken of calculate' delegate en gebruik deze voorhet uitvoeren van een lambda expressie. De lamdba expressie gebruikt twee integer parameters en geeft als resultaat de som van de parameters terug
+            // Voer de berekening van 1 + 1 uit en controleer dat de de return waarde 2 is.
+            // Print daarna het resultaat in de console
+
+            // Voeg (of abonneer) twee lambda expressies toe aan dezelfde delegate variable die een deling en de ander een vermenigvuldiging kunnen uitvoeren
+            //Voer de delegate vaiable uit met de parameterwaardes 2 en 2.
+            // Print het resultaat en controleer welke berekening is uitgevoerd.. ;)
 
             Console.WriteLine("\nPress <ENTER> to exit..");
             Console.ReadLine();
@@ -65,12 +75,13 @@ namespace LambdaConsole
 
             var filteredPeople = people.Where(p => p.Surname.StartsWith("J"));
 
+
             for (int i = 0; i < filteredPeople.Length; i++)
             {
                 Console.WriteLine(filteredPeople[i].Surname);
             }
 
-            //Opdracht
+            //Opdrachten 'Voorgedefineerde delegates en gebruik ze als method parameters' (en nog een stukje OOP, toepassen van voorgedefineerde interfaces)
             // 1. implementeer de code voor onderstaande foreach loop
             //      foreach(var p in people_j) Console.WriteLine(p.Surname);
             // 2. voeg de methode First() aan de classe List toe
