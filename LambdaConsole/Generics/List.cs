@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 
 namespace LambdaConsole.Generics
 {
@@ -51,5 +53,6 @@ namespace LambdaConsole.Generics
             newArray[array.Length] = itemToAdd;
             return newArray;
         }
+
     }
 }

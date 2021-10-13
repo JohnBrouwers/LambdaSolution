@@ -10,10 +10,10 @@ namespace LambdaConsole
         private delegate void Say(string what);
         private delegate string What();
 
-        private delegate int Optellen(int i, int j);
-
         static void Main(string[] args)
         {
+            GenericListSample();
+
             //Declare delegate object variable
             SayWhat sayWhat;
 
@@ -52,8 +52,9 @@ namespace LambdaConsole
             // Print daarna het resultaat in de console
 
             // Voeg (of abonneer) twee lambda expressies toe aan dezelfde delegate variable die een deling en de ander een vermenigvuldiging kunnen uitvoeren
-            //Voer de delegate vaiable uit met de parameterwaardes 2 en 2.
+            //Voer de delegate vaiable uit met de parameterwaardes 3 en 3.
             // Print het resultaat en controleer welke berekening is uitgevoerd.. ;)
+
 
             Console.WriteLine("\nPress <ENTER> to exit..");
             Console.ReadLine();
@@ -83,13 +84,15 @@ namespace LambdaConsole
 
             //Opdrachten 'Voorgedefineerde delegates en gebruik ze als method parameters' (en nog een stukje OOP, toepassen van voorgedefineerde interfaces)
             // 1. implementeer de code voor onderstaande foreach loop
-            //      foreach(var p in people_j) Console.WriteLine(p.Surname);
+            //      foreach(var p in filteredPeople) Console.WriteLine(p.Surname);
             // 2. voeg de methode First() aan de classe List toe
             //      de parameter moet een lambda expressie als argument mee kunnen krijgen
             //      implementeer de code om in de collectie van T de eerste gevonden T terug te geven die aan de lambda expressie voldoet
             // 3. Voeg de methode Any() aan de classe List toe 
             //      de parameter moet een lambda expressie als argument mee kunnen krijgen
             //      implementeer de code waarbij true terug gegeven wordt wanneer de lambda expressie op T waar is in de collectie van de T
+
+
 
         } 
 
