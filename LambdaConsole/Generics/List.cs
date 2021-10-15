@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 
 namespace LambdaConsole.Generics
 {
@@ -8,9 +6,9 @@ namespace LambdaConsole.Generics
     {
         private T[] data;
 
-        public List()
+        public List(): this(new T[0])
         {
-            data = new T[0];
+            //data = new T[0];//made obsolete by constructor chaining
         }
         public List(T[] data)
         {

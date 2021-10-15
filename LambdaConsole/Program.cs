@@ -12,7 +12,7 @@ namespace LambdaConsole
 
         static void Main(string[] args)
         {
-            GenericListSample();
+            //GenericListSample();
 
             //Declare delegate object variable
             SayWhat sayWhat;
@@ -47,12 +47,12 @@ namespace LambdaConsole
             Console.WriteLine(what());
 
             //Opdracht 'Voer een eigen lambda expression uit':
-            // Definieer een 'bereken of calculate' delegate en gebruik deze voorhet uitvoeren van een lambda expressie. De lamdba expressie gebruikt twee integer parameters en geeft als resultaat de som van de parameters terug
+            // Definieer een 'bereken of calculate' delegate en gebruik deze voor het uitvoeren van een lambda expressie. De lamdba expressie gebruikt twee integer parameters en geeft als resultaat de som van de parameters terug
             // Voer de berekening van 1 + 1 uit en controleer dat de de return waarde 2 is.
             // Print daarna het resultaat in de console
 
             // Voeg (of abonneer) twee lambda expressies toe aan dezelfde delegate variable die een deling en de ander een vermenigvuldiging kunnen uitvoeren
-            //Voer de delegate vaiable uit met de parameterwaardes 3 en 3.
+            //Voer de delegate variable uit met de parameterwaardes 3 en 3 en sla de uitkomst op in een nieuwe variabele.
             // Print het resultaat en controleer welke berekening is uitgevoerd.. ;)
 
 
